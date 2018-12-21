@@ -1,0 +1,9 @@
+<?php 
+session_start();
+if(isset($_SESSION["start"])){
+	unset($_SESSION['start']);
+	header("location:dangnhap.php");
+}
+else
+header("location:dangnhap.php");
+ ?>
